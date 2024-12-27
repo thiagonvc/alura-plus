@@ -34,16 +34,11 @@ Este projeto é uma landing page fictícia para promover o **Combo+**, uma assin
 - **Mobile-first**: A página foi desenvolvida priorizando a experiência em dispositivos móveis.
 - Ajustes automáticos em imagens, textos e botões para diferentes tamanhos de tela.
 
-## 🚀 Como executar o projeto
+## 🚀 Como visualizar o projeto
 
-1. Clone o repositório para sua máquina local:
-```https://github.com/thiagonvc/alura-plus.git```
+Acesse o link: https://alura-plus-zeta-lovat.vercel.app/
 
-2.	Navegue até a pasta do projeto:
-```cd alura-plus```
-
-
-3.	Abra o arquivo index.html em qualquer navegador.
+* Sugiro que você teste os diferentes tamanhos de tela. 📱 💻
 
 ## 📝 Informações Adicionais
 
