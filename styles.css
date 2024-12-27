@@ -3,8 +3,8 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundaria: #C0C0C0;
+    --cinza-secundaria-efeito: #c0c0c061;
     --botao-azul: #167BF7;
-    --botao-azul-efeito: #418eeda3;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
 }
@@ -58,11 +58,12 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+    transition: 1s;
 }
 
 .container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
+    transition: 1s;
+    font-size: 1.5em;
 }
 
 .botao_secundario {
@@ -164,3 +165,100 @@ body {
     color: var(--cinza-secundaria);
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        justify-content: center;
+
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__descricao {
+        padding-bottom: 1em;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .principal {
+        align-items: center;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .descricao__titulo {
+        font-size: 2em;
+    }
+
+    .secundario__imagem {
+        width: 60vw;
+    }
+
+    .dispositivos {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dispositivos__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 2em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2em;
+    }
+
+    .lista__item {
+        font-size: 1em;
+    }
+
+    .rodape {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape__logo {
+        width: 30vw;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+    .lista__link {
+        margin: 1em;
+        padding: 0.5em;
+        border: var(--cinza-secundaria-efeito) solid 0.5px;
+        border-radius: 0.5em;
+    }
+
+    .lista__link:hover {
+        border-color: red;
+    }
+
+    .lista__ancora:hover {
+        color: red;
+    }
+
+    .rodape__texto {
+        margin: 1.5em;
+        margin-bottom: 0;
+    }
+}
